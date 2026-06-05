@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📝 My Tasks</h1>
+            <p class="subtitle">Stay organized and productive</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Input Section -->
+            <div class="input-section">
+                <form id="todoForm" class="todo-form">
+                    <input 
+                        type="text" 
+                        id="todoInput" 
+                        placeholder="Add a new task..." 
+                        class="todo-input"
+                        autocomplete="off"
+                    >
+                    <button type="submit" class="add-btn">
+                        <span>Add Task</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">
+                    All <span class="count">0</span>
+                </button>
+                <button class="filter-btn" data-filter="active">
+                    Active <span class="count">0</span>
+                </button>
+                <button class="filter-btn" data-filter="completed">
+                    Completed <span class="count">0</span>
+                </button>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="stat">
+                    <span class="stat-label">Total:</span>
+                    <span class="stat-value" id="totalCount">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Progress:</span>
+                    <span class="stat-value" id="progressPercent">0%</span>
+                </div>
+            </div>
+
+            <!-- Todo List -->
+            <div class="todos-container">
+                <ul id="todoList" class="todo-list">
+                    <!-- Tasks will be inserted here -->
+                </ul>
+
+                <!-- Empty State -->
+                <div id="emptyState" class="empty-state">
+                    <div class="empty-icon">✨</div>
+                    <p>No tasks yet. Add one to get started!</p>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button id="clearCompletedBtn" class="action-btn secondary">
+                    Clear Completed
+                </button>
+                <button id="clearAllBtn" class="action-btn danger">
+                    Clear All
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>All tasks are automatically saved to your browser's local storage</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
