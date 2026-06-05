@@ -1,0 +1,59 @@
+// Mock Data - Scheduling
+// Current and planned schedule for operators
+
+export const SCHEDULING = {
+  date: '2026-06-05',
+  data: [
+    {
+      operator_id: 'OP_001',
+      operator_name: 'Mario Rossi',
+      schedule: [
+        { slot: '09:00', current: 'inbound', planned: 'inbound' },
+        { slot: '09:30', current: 'inbound', planned: 'inbound' },
+        { slot: '10:00', current: 'inbound', planned: 'inbound' },
+        { slot: '10:30', current: 'inbound', planned: 'inbound' },
+        { slot: '11:00', current: 'inbound', planned: 'inbound' },
+        { slot: '11:30', current: 'pausa', planned: 'pausa' },
+        { slot: '12:00', current: 'back-office', planned: 'back-office' },
+        { slot: '12:30', current: 'back-office', planned: 'back-office' },
+        { slot: '13:00', current: 'inbound', planned: 'inbound' },
+        { slot: '13:30', current: 'inbound', planned: 'inbound' },
+        { slot: '14:00', current: 'inbound', planned: 'inbound' },
+        { slot: '14:30', current: 'inbound', planned: 'inbound' },
+        { slot: '15:00', current: 'inbound', planned: 'inbound' },
+        { slot: '15:30', current: 'inbound', planned: 'inbound' },
+        { slot: '16:00', current: 'pausa', planned: 'pausa' },
+        { slot: '16:30', current: 'inbound', planned: 'inbound' },
+        { slot: '17:00', current: 'inbound', planned: 'inbound' },
+        { slot: '17:30', current: 'back-office', planned: 'back-office' }
+      ]
+    },
+    {
+      operator_id: 'OP_002',
+      operator_name: 'Laura Bianchi',
+      schedule: [
+        { slot: '09:00', current: 'inbound', planned: 'inbound' },
+        { slot: '09:30', current: 'inbound', planned: 'inbound' },
+        { slot: '10:00', current: 'inbound', planned: 'inbound' },
+        { slot: '10:30', current: 'inbound', planned: 'inbound' },
+        { slot: '11:00', current: 'inbound', planned: 'inbound' },
+        { slot: '11:30', current: 'inbound', planned: 'inbound' },
+        { slot: '12:00', current: 'pausa', planned: 'pausa' },
+        { slot: '12:30', current: 'pausa', planned: 'pausa' },
+        { slot: '13:00', current: 'inbound', planned: 'inbound' },
+        { slot: '13:30', current: 'inbound', planned: 'inbound' },
+        { slot: '14:00', current: 'inbound', planned: 'inbound' },
+        { slot: '14:30', current: 'inbound', planned: 'inbound' },
+        { slot: '15:00', current: 'inbound', planned: 'inbound' },
+        { slot: '15:30', current: 'inbound', planned: 'inbound' },
+        { slot: '16:00', current: 'inbound', planned: 'inbound' },
+        { slot: '16:30', current: 'back-office', planned: 'back-office' },
+        { slot: '17:00', current: 'back-office', planned: 'back-office' },
+        { slot: '17:30', current: 'back-office', planned: 'back-office' }
+      ]
+    }
+    // ... Additional operators would be added here
+  ]
+};
+
+export default SCHEDULING;
